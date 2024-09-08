@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -69,6 +69,79 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
+ -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vansro.payments</groupId>
+  <artifactId>vansro</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>vansro</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>21</maven.compiler.source> <!-- Use a newer Java version -->
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version> <!-- Updated version -->
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.2.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.2.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version> <!-- Latest version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.2.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.10.0</version> <!-- Updated version -->
+        </plugin>
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.4.1</version> <!-- Updated version -->
         </plugin>
       </plugins>
     </pluginManagement>
